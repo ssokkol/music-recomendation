@@ -47,8 +47,3 @@ def save_recommendations(rows: Iterable[Tuple[int, str, str, float]], out_path: 
         for track_id, title, artist, score in rows:
             writer.writerow([track_id, title, artist, f"{score:.4f}"])
 
-
-def fetch_spotify_tracks() -> List[TrackRow]:
-    # Placeholder for Spotify Web API integration.
-    # Replace with API calls and map Spotify features to TrackRow fields.
-    return []

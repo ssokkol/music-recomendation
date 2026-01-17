@@ -1,4 +1,4 @@
-# Music Recommender (Favorite Tracks + Spotify)
+# Music Recommender (Favorite Tracks)
 
 Pet project: music recommendations from favorite tracks + a dark-themed web page.
 
@@ -42,17 +42,6 @@ python src/keras_model.py
 pip install -r requirements-dev.txt
 pytest
 ```
-
-## Spotify integration (optional)
-This project includes a stub for Spotify usage. To connect real data:
-1. Create a Spotify app and get `CLIENT_ID` and `CLIENT_SECRET`.
-2. Set environment variables:
-   - `SPOTIFY_CLIENT_ID`
-   - `SPOTIFY_CLIENT_SECRET`
-3. Replace the placeholder `fetch_spotify_tracks()` in `src/utils_io.py`
-   with real API calls (see Spotify Web API docs).
-
-Note: Network access is not required for the coursework demo.
 
 ## Web page
 Open `web/index.html` in a browser. The page includes:
