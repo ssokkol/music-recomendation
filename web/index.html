@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseMap - Music Recommender</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">PulseMap</div>
+        <div class="nav-links">
+          <a href="https://open.spotify.com" target="_blank" rel="noreferrer">Spotify</a>
+          <a href="https://developer.spotify.com" target="_blank" rel="noreferrer">API Docs</a>
+          <a href="#demo">Demo</a>
+        </div>
+      </nav>
+
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Favorite tracks in. Precision picks out.</p>
+          <h1>Dark-mode music recommender with neon energy.</h1>
+          <p class="subhead">
+            A compact coursework project: files + Python data, a simple neural network, and a deeper
+            Keras model. The web page ties it together with links, images, frames, and a form.
+          </p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#form">Try the form</a>
+            <a class="btn ghost" href="#models">Model details</a>
+          </div>
+        </div>
+        <figure class="hero-art">
+          <img src="assets/cover.svg" alt="Waveform illustration" />
+          <figcaption>Visualizing tempo, energy, and vibe.</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel" id="models">
+        <div>
+          <h2>Model layers</h2>
+          <p>
+            The minimal model uses pure Python to learn a favorite score. The Keras model uses
+            stacked dense layers to refine ranking.
+          </p>
+          <div class="chips">
+            <span>tempo</span>
+            <span>energy</span>
+            <span>danceability</span>
+            <span>valence</span>
+          </div>
+        </div>
+        <div class="stats">
+          <div>
+            <div class="stat-number">2</div>
+            <div class="stat-label">Neural models</div>
+          </div>
+          <div>
+            <div class="stat-number">4</div>
+            <div class="stat-label">Audio features</div>
+          </div>
+          <div>
+            <div class="stat-number">5</div>
+            <div class="stat-label">Top picks</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="demo">
+        <div class="embed">
+          <h2>Embedded inspiration</h2>
+          <p>Iframe example: curated playlist preview.</p>
+          <iframe
+            title="Playlist preview"
+            src="https://www.youtube.com/embed/5qap5aO4i9A"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="features">
+          <h2>What is included</h2>
+          <ul>
+            <li>CSV file parsing and saving results.</li>
+            <li>Manual neural network implementation.</li>
+            <li>Keras training demo.</li>
+            <li>Dark UI with gradients and neon accents.</li>
+          </ul>
+          <a class="inline-link" href="https://github.com" target="_blank" rel="noreferrer">
+            Link example: GitHub repo
+          </a>
+        </div>
+      </section>
+
+      <section class="panel form-panel" id="form">
+        <div>
+          <h2>Favorite tracks form</h2>
+          <p>Sample form for adding a new track to the dataset.</p>
+        </div>
+        <form class="track-form">
+          <label>
+            Track title
+            <input type="text" placeholder="Night Drive" />
+          </label>
+          <label>
+            Artist
+            <input type="text" placeholder="Neon Skies" />
+          </label>
+          <label>
+            Energy
+            <input type="range" min="0" max="100" value="78" />
+          </label>
+          <label>
+            Favorite?
+            <select>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </label>
+          <button class="btn primary" type="submit">Add to dataset</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>PulseMap coursework project</div>
+      <div class="footer-links">
+        <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer">TensorFlow</a>
+        <a href="https://keras.io" target="_blank" rel="noreferrer">Keras</a>
+        <a href="mailto:student@example.com">Contact</a>
+      </div>
+    </footer>
+  </body>
+</html>
